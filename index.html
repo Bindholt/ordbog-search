@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordbog</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Søg i den danske ordbog</h1>
+    <input type="text" id="search" placeholder="Søg efter ord">
+    <button id="search-btn">Søg</button>
+    <div>
+        <span id="lookups">
+        </span>
+        <span id="time-elapsed">
+        </span>
+    </div>
+    
+    <div id="success" style="display: none;">
+        <h1>Fundet!</h1>
+        <div id="inflected"></div>
+        <div id="headword"></div>
+        <div id="homograph"></div>
+        <div id="partofspeech"></div>
+        <div id="id"></div>
+        
+    </div>
+    <div id="failure" style="display:none;">
+        <h1>Ikke fundet..</h1>
+        <div><span>Kunne ikke finde noget på ordet: </span><span id="fail-word"></span></div>
+    </div>
+    
+</body>
+</html>
